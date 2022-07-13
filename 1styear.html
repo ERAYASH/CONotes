@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computer Notes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>  
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CONotes</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Year
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/1styear.html">1st Year</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#/2ndyear.html">2nd Year</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="3rdyear.html">3rd year</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>Notes are Available !!!  </strong>Check it now 
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div class="row row-cols-2 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">22014 Web Page Designing Using HTML</h5>
+              <p class="card-text"> <STrong> Solved lab manual pdf | Manual Answer | MSBTE.</STrong> </p>
+              <a href="/WPD.pdf" download="WPD SOLVED MANUAL" Download Now 
+                class="btn btn-primary">Download   
+                 </a>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">22226 Programming In C</h5>
+              <p class="card-text"> <STrong> Solved lab manual pdf | Manual Answer | MSBTE.</STrong> </p>
+              <a href="/PIC.pdf" download="PIC SOLVED MANUAL" Download Now 
+              class="btn btn-primary">Download   </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHN53-tdOyNj1OPswhJF6rjqBosjhRd7Do4A&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">22013 (CPH) Computer Peripherals And Hardware Maintainance </h5>
+              <p class="card-text"> <STrong> Solved lab manual pdf | Manual Answer | MSBTE.</STrong> </p>
+              <a href="/CPH.pdf" download="CPH SOlved Manual" Download Now 
+              class="btn btn-primary">Download   </a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+ </body>
+</html>
